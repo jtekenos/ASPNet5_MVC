@@ -1,0 +1,38 @@
+﻿@model MvcNet5.Models.Speaker
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<div>
+    <dl class="dl-horizontal">
+        <dt>@Html.DisplayNameFor(model => model.FirstName)</dt>
+        <dd>@Html.DisplayFor(model => model.FirstName)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.MobilePhone)</dt>
+        <dd>@Html.DisplayFor(model => model.MobilePhone)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Email)</dt>
+        <dd>@Html.DisplayFor(model => model.Email)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Blog)</dt>
+        <dd>@Html.DisplayFor(model => model.Blog)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Twitter)</dt>
+        <dd>@Html.DisplayFor(model => model.Twitter)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Specialization)</dt>
+        <dd>@Html.DisplayFor(model => model.Specialization)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Bio)</dt>
+        <dd>@Html.DisplayFor(model => model.Bio)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.PhotoURL)</dt>
+        <dd>@Html.DisplayFor(model => model.PhotoURL)</dd>
+    </dl>
+</div>
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.SpeakerId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</p> 
